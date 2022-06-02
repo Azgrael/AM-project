@@ -1,9 +1,13 @@
-function(){
+(function(){
 
   'use strict';
 
+  var player = {
+  img = ,
+  vida = 5,
+  score = 0
+  };
 
 
 
-
-}
+})
