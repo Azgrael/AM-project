@@ -10,3 +10,8 @@ to do:
         Sim, temos que criar um mapa tipo caverna ou dungeon
     5 -Criar Personagem
         Possivelmente temos que criar a nossa personagem tb.
+    
+
+Trabalho realizado por:
+Ricardo Fernandes, Nº200100072;
+Rúben Gualdino, Nº .
