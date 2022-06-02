@@ -1,6 +1,8 @@
 <html>
   <head>
   <title>Legends of Mythos</title>
+  <script src="Wrath Of The Minotaur-Js.js" defer></script>
+
   </head>
   <body>
   <div id="labirinto">
