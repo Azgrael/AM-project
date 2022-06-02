@@ -4,4 +4,11 @@ h1{
   font-size: 22em;
   font-family: ; 
   color: red;
+  border: 5px white;
+}
+
+button{
+  background:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(80,25,25,1) 93%, rgba(126,3,3,1) 100%);
+  color:white;
+  border: 3px black;
 }
