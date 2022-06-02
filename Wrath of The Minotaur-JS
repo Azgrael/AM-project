@@ -8,6 +8,27 @@
   score = 0
   };
 
+window.addEventListener('keydown',mudarDireccao);
 
+function mudarDireccaoPlayer(e) {
 
-})
+	switch(e.key) {
+		case 'ArrowUp':
+			top--;
+			break;
+		case 'ArrowDown':
+			top++;
+			break;
+		case 'ArrowRight':
+			left++;
+			break;
+		case 'ArrowLeft':
+			left--;
+			break;
+		default:
+      break;
+	}
+
+}
+
+})();
