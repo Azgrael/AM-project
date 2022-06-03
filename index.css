@@ -1,6 +1,5 @@
 body{
   background-color: linear-gradient(90deg, rgba(255,0,0,0.9) 12%, rgba(251,92,0,0.9) 22%, rgba(255,244,0,0.9) 32%, rgba(0,0,0,0.95) 55%);
-  align-content: center;
 }
 
 h1{
@@ -10,7 +9,10 @@ h1{
 }
 
 button{
+  margin-left: 25%;
   background:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(80,25,25,1) 93%, rgba(126,3,3,1) 100%);
   color:white;
   border: 3px black;
+  width:100px;
+  height:100px;
 }
