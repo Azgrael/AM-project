@@ -12,5 +12,5 @@ const map = new Image()
 map.src = './img/MapaLabirintofINAL2.png'
 
 map.onload = () => {
-  c.drawImage(map, 0, 0)
+  c.drawImage(map, -200, 5600)
 }
