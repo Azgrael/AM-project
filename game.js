@@ -18,7 +18,7 @@ player.src = './img/playerDown.png'
 //mino.src = './img/Minotaur - Sprite Sheet.png'
 
 map.onload = () => {
-  c.drawImage(map, -300, -6600)
+  c.drawImage(map, -380, -6600)
   c.drawImage(player, 0, 0, player.width/4, player.height, canvas.width/2-(player.width/4)/2, canvas.height/2-player.height/2, player.width/4, player.height)
   // c.drawImage(mino, 550, 252)
 }
