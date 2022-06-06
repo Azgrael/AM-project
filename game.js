@@ -9,7 +9,7 @@ c.fillStyle = 'white'
 c.fillRect(0, 0, canvas.width, canvas.height) //cria um retangulo com as propriedades X, Y, largura, altura (por esta ordem)
 
 const map = new Image()
-map.src = './img/O Mapa Labirinto Final.png'
+map.src = './img/MapaLabirintofINAL2.png'
 
 map.onload = () => {
   c.drawImage(map, 0, 0)
