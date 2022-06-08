@@ -38,10 +38,10 @@ collisionsMap.forEach((row, i) => {
 })
 
 const map = new Image()
-map.src = './MapaLabirintofINAL2.png'
+map.src = './img/MapaLabirintofINAL2.png'
 
 const player = new Image()
-player.src = './Character.png'
+player.src = './img/Character.png'
 
 class Sprite {
     constructor({position, velocity, image}) {
