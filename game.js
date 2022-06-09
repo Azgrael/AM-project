@@ -18,7 +18,7 @@ class Boundary {
         this.height = 40
     }
     draw() {
-        c.fillStyle = 'red'
+        c.fillStyle = 'rgba(255, 0, 0, 0)'
         c.fillRect(this.position.x, this.position.y, this.width, this.height)
     }
 }
@@ -274,4 +274,4 @@ map.onload = () => {
         player.width/4, //coordenada x do player
         player.height //coordenada y do player)
 }
- */
+*/
