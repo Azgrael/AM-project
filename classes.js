@@ -244,7 +244,7 @@ class Boundary {
 
 /*
 
-Parte da pagina principal
+Parte na pagina principal
 
 
 const image = new Image()
