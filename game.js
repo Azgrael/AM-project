@@ -104,13 +104,7 @@ const keys = {
     }
 }
 
-const test = new Boundary({
-    position: {
-        x: 500,
-        y: 210
-    }
-})
-const movables = [background, test]
+const movables = [background, ...boundaries]
 
 function Colisao({ret1, ret2}) {
     return(
@@ -123,40 +117,103 @@ function Colisao({ret1, ret2}) {
 function animate() {
     window.requestAnimationFrame(animate)
     background.draw()
-    //boundaries.forEach(boundary => {
-    //    boundary.draw()
-    //})
-    test.draw()
+    boundaries.forEach((boundary) => {
+        boundary.draw()
+    })
     player.draw()
 
-    if(
-        Colisao({
-            ret1: player,
-            ret2: test
-        })
-    ){
-        console.log('colliding')
-    }
-
+    let mexer = true
     if(keys.w.pressed && lastKey==='w'){
-        movables.forEach((movable) =>{
-            movable.position.y += 3
-        })
+        for (let i=0; i<boundaries.length; i++){
+            const boundary = boundaries[i]
+            if(
+                Colisao({
+                    ret1: player,
+                    ret2: {...boundary, position: {
+                        x: boundary.position.x,
+                        y: boundary.position.y+4
+                    }}
+                })
+            ){
+                console.log('colliding')
+                mexer = false
+                break
+            }
+        }
+        if(mexer) {
+            movables.forEach((movable) => {
+                movable.position.y += 4
+            })
+        }
     }
     else if(keys.a.pressed && lastKey==='a'){
-        movables.forEach((movable) =>{
-            movable.position.x += 3
-        })
+        for (let i=0; i<boundaries.length; i++){
+            const boundary = boundaries[i]
+            if(
+                Colisao({
+                    ret1: player,
+                    ret2: {...boundary, position: {
+                            x: boundary.position.x+4,
+                            y: boundary.position.y
+                        }}
+                })
+            ){
+                console.log('colliding')
+                mexer = false
+                break
+            }
+        }
+        if(mexer) {
+            movables.forEach((movable) =>{
+                movable.position.x += 4
+            })
+        }
     }
     else if(keys.s.pressed && lastKey==='s'){
-        movables.forEach((movable) =>{
-            movable.position.y -= 3
-        })
+        for (let i=0; i<boundaries.length; i++){
+            const boundary = boundaries[i]
+            if(
+                Colisao({
+                    ret1: player,
+                    ret2: {...boundary, position: {
+                            x: boundary.position.x,
+                            y: boundary.position.y-4
+                        }}
+                })
+            ){
+                console.log('colliding')
+                mexer = false
+                break
+            }
+        }
+        if(mexer) {
+            movables.forEach((movable) =>{
+                movable.position.y -= 4
+            })
+        }
     }
     else if(keys.d.pressed && lastKey==='d'){
-        movables.forEach((movable) =>{
-            movable.position.x -= 3
-        })
+        for (let i=0; i<boundaries.length; i++){
+            const boundary = boundaries[i]
+            if(
+                Colisao({
+                    ret1: player,
+                    ret2: {...boundary, position: {
+                            x: boundary.position.x-4,
+                            y: boundary.position.y
+                        }}
+                })
+            ){
+                console.log('colliding')
+                mexer = false
+                break
+            }
+        }
+        if(mexer) {
+            movables.forEach((movable) =>{
+                movable.position.x -= 4
+            })
+        }
     }
 }
 animate()
