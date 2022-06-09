@@ -1,6 +1,8 @@
 
+/* A personagem que temos tem 128x128 com 4 imagens em cada lateral, logo 128/4= 32*/
+
 class Sprite{
-    constructor({position, velocity, image frames = { max: 1}}){
+    constructor({position, velocity, image, frames = { max: 1}}){
         this.position = position;
         this.image= image;
         this.frames = {...frames, val: 0, elapsed: 0 }
