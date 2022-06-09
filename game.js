@@ -135,7 +135,6 @@ function animate() {
                     }}
                 })
             ){
-                console.log('colliding')
                 mexer = false
                 break
             }
@@ -158,7 +157,6 @@ function animate() {
                         }}
                 })
             ){
-                console.log('colliding')
                 mexer = false
                 break
             }
@@ -181,7 +179,6 @@ function animate() {
                         }}
                 })
             ){
-                console.log('colliding')
                 mexer = false
                 break
             }
@@ -204,7 +201,6 @@ function animate() {
                         }}
                 })
             ){
-                console.log('colliding')
                 mexer = false
                 break
             }
