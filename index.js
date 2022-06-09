@@ -1,3 +1,5 @@
-document.getElementById("start").onclick = function () {
-        location.href = "game.html";
-};
+function click () {
+        document.getElementById("start").onclick = function () {
+                location.href = "game.html";
+        };
+}
