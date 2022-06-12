@@ -255,10 +255,6 @@ window.addEventListener('keyup', (e) => {
 
 //---------------
 
-//temos que diminuir o scaling do player
-//temos que aumentar o scaling do minotauro
-
-
 /*
 //const mino = new Image()
 //mino.src = './img/Minotaur - Sprite Sheet.png'
