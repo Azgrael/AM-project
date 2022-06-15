@@ -31,6 +31,14 @@ map.src = './img/MapaLabirintofINAL2.png'
 const fore = new Image()
 fore.src = './img/MapaLabirintofINAL2ForeGroundIMG.png'
 
+const MEsquerda = new Image()
+MEsquerda.src = './img/Personagens/Minotauro/minotauroEsquerda.png'
+const MDireita = new Image()
+MDireita.src = './img/Personagens/Minotauro/minotauroDireita.png'
+const MAtaque = new Image()
+MAtaque.src = './img/Personagens/Minotauro/minotauroAtack.png'
+
+
 const Pcima = new Image()
 Pcima.src = './img/Personagens/Hero/cima.png'
 const Pesquerda = new Image()
@@ -206,6 +214,12 @@ function animate() {
             })
         }
     }
+    if(background.position.y >= -415){
+    	if(confirm("You win!!!\nDo you wish to reset the game?")===true){
+    		window.location.reload();
+    	}
+    }
+
 }
 animate()
 
