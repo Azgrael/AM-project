@@ -48,6 +48,8 @@ Pdireita.src = './img/Personagens/Hero/direita.png'
 const Pbaixo = new Image()
 Pbaixo.src = './img/Personagens/Hero/baixo.png'
 
+
+
 const player = new Sprite({
     position: {
         x: canvas.width / 2 - 40,
